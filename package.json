@@ -1,0 +1,24 @@
+{
+  "name": "riotconnector",
+  "version": "1.0.0",
+  "description": "Just testing out the Riot Games API",
+  "main": "main.js",
+  "dependencies": {
+    "request": "^2.67.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffpignataro/riotconnector.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffpignataro/riotconnector/issues"
+  },
+  "homepage": "https://github.com/jeffpignataro/riotconnector#readme"
+}
