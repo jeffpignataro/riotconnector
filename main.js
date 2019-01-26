@@ -2,14 +2,12 @@ var config = require('./config');
 
 var request = require('request');
 
-var summoner = "jeffp2662";
-var url = 'https://' + config.region + 
-		  '.api.pvp.net/api/lol/' + config.region + 
-		  '/v1.4/summoner/by-name/' + summoner + 
-		  '?api_key=' + config.apiKey;
+var requestController = require('./controllers/requestController');
 
-//console.log(url);
+var url = `https://${config.region}.api.riotgames.com/lol/summoner/v3/summoners/by-name/${config.testSummonerName}?api_key=${config.apiKey}`;
 
-request(url, function (error, response, body) {
-  console.log(body);
+console.log(url);
+
+request(url, function(error, response, body) {
+    console.log(body);
 });
